@@ -62,10 +62,11 @@ public class DESCRIPTION {
 
 	    private String title;
 
-	   @ManyToMany//ONE USER CREATE MULTIPLE ORDER
+	    //IN MULTIPLE ORDER WE CAN ADD MULTIPLE PRODUCTS	    
+	   @ManyToMany
 	   private List<Product> products;
 	   
-	   @ManyToOne//IN MULTIPLE ORDER WE CAN ADD MULTIPLE PRODUCTS
+	   @ManyToOne//ONE USER CREATE MULTIPLE ORDER
 	   @JoinColumn(name="userId")
 	   private User user;
 
